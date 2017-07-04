@@ -35,8 +35,13 @@ s.source = { :git => "https://github.com/mspviraj/PasscodeLock.git", :tag => "#{
 
 
 # 7
-s.source_files = "PasscodeLock/**/*.{swift}"
+s.source_files = 'PasscodeLock/*.{h,swift}',
+'PasscodeLock/*/*.{swift}'
 
-# 9
-s.resources = "PasscodeLock/**/*.{png,jpeg,jpg,storyboard,xib}"
+# 8
+s.resources = [
+'PasscodeLock/Views/PasscodeLockView.xib',
+'PasscodeLock/en.lproj/*'
+]
+
 end
